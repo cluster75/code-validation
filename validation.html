@@ -11,7 +11,7 @@
         async function validateCode() {
             if (userCode) { // Si un code est présent dans l'URL
                 // Envoie une requête à Google Apps Script avec le code
-                const response = await fetch(`https://script.google.com/macros/s/AKfycby-lKEjJUYIgUe13Wn5LtnHqtZ7XAxqANiHegsTaGZ86hyrbOqvHk36xTlmuA8ktrc/exec?code=${userCode}`);
+                const response = await fetch(`https://script.google.com/macros/s/AKfycbwj5KIaMdyNauKAyyfo94ljzPgnpkqoruZjWzhSRu03KDfB4nU3uVue_7SpXoCXSjBT/exec?code=${userCode}`);
                 const result = await response.json();
 
                 if (result.status === 'success') {
